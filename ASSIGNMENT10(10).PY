@@ -3,6 +3,8 @@ class Date:
         self.h=h
         self.m=m
         self.s=s
+    def show(self):
+        print(self.h,self.m,self.s)
     def sum(self,t2):
         h_res=self.h+t2.h
         m_res=self.m+t2.m
@@ -32,3 +34,5 @@ if f=="+":
     print(t1.sum(t2))
 if f=="-":
     print(t1.minus(t2))
+print(t1.show)
+print(t2.show)
